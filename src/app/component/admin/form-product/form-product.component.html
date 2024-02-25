@@ -1,0 +1,59 @@
+<form>
+<div class="w-75 mx-auto p-5 m-5 shadow-lg">
+
+    <h1>CRUD</h1>
+
+    <!-- <label>productID:</label>
+    <input type="number" class="form-control mb-3" id="producId"
+    name="id"
+    [(ngModel)]="formdata.id"
+    > -->
+
+    <label *ngIf="!formdata.id">productID:</label>
+    <input *ngIf="!formdata.id" type="number" class="form-control mb-3" id="producId"
+    name="id"
+    [(ngModel)]="formdata.id"
+>
+
+
+    <label>productName:</label>
+    <input type="text" class="form-control mb-3" id="productName"
+    name="name"
+    [(ngModel)]="formdata.name"
+    >
+
+    <label>productPrice:</label>
+    <input type="number" class="form-control mb-3" id="productPrice"
+    name="price"
+    [(ngModel)]="formdata.price"
+    >
+
+
+    <label>productCategory:</label>
+    <div class="input-group mb-3">
+        <select class="form-select" id="inputGroupSelect02" 
+        name="category" [(ngModel)]="formdata.category">
+            <option [value]="null" disabled selected>Select a category</option>
+            <option value="category1">category1</option>
+            <option value="category2">category2</option>
+            <option value="category3">category3</option>
+        </select>
+        <label class="input-group-text" for="inputGroupSelect02">Options</label>
+    </div>
+
+
+<label>product Quantity:</label>
+<input type="number" class="form-control mb-3" id="productQuantity"
+name="quantity"
+[(ngModel)]="formdata.quantity"
+>
+
+<button [disabled]="formdata.id" class="btn btn-success m-2" id="addProduct" (click)="create()">Add Product</button>
+<button [disabled]="!formdata.id" class="btn btn-info" id="updateProduct" (click)="update()">Update Product</button>
+
+    <!-- <button  class="btn btn-success m-2 " id="addProduct" (click)="create()">AddProduct</button>
+    <button  class="btn btn-info" id="addProduct" (click)="update()">update Product</button> -->
+
+
+</div>
+</form>

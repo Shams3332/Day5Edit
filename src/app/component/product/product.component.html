@@ -1,0 +1,45 @@
+
+<h2 class="mt-5">Credit Cart Pipe: {{creditCart | creditCart}}</h2>
+ 
+<div class="row mt-5">
+ 
+  
+    @for(item of filterproduct; track item.id){
+
+  <div  class="col-md-4 mb-3" [appRoundedborder] ="myShadow" defaultShadow ="5px 5px 10px pink" >
+  
+      <div class="image-container">
+        <img [src]="item.imageCover" class="img-fluid" />
+      </div>
+      <h5>Product Title: {{item.title}}</h5>
+      <p>Slug: {{item.slug}}</p>
+  
+      @switch (item.quantity){ 
+        @case(1) {last one item}  
+        @case (0) {out of stock} 
+        @case (2) {last two items} 
+        @default {in stock : {{item.quantity}}} 
+    }
+  
+      <p>Price: {{item.price | currency}} </p>
+      
+      <p class="text-danger">{{item.priceAfterDiscount}}</p>
+      <p>Category: {{item.category}}</p>
+      <button class="btn btn-success ms-1" [routerLink]="['/product',item.id]">Details</button>
+      <button class="btn btn-info" [disabled]="item.quantity == 0" (click)="addToCart(item)">Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+      <!-- <button class="btn btn-success ms-1" (click)="decreaseQuantity(item)" [disabled]="item.quantity == 0">Decrease Q</button> -->
+    </div>
+  
+}
+    
+  
+  </div> 
+
+
+<div>
+    <h1>Store Name: {{store1.name}}</h1>
+    <h4>Branches: {{store1.branches}}</h4>
+    <img *ngIf="showImage" src="{{store1.logo}}" width="150" height="150">
+    <h3 *ngIf="!showImage">Thanks for purchasing from our store, {{ClientName}}!<br>{{birthDay | date}}</h3>
+    <button class="btn btn-info" (click)="toggleImg()" m-3 >Buy</button>
+</div>

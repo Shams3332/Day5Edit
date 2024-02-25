@@ -1,0 +1,213 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "name": "prod1",
+      "price": 1111111,
+      "category": "category1",
+      "quantity": 77
+    },
+    {
+      "id": "5",
+      "name": "prod2",
+      "price": 900,
+      "category": "category1",
+      "quantity": 5
+    },
+    {
+      "id": "6",
+      "name": "shghjd",
+      "price": 3768,
+      "category": "category2",
+      "quantity": 555
+    },
+    {
+      "id": "3",
+      "name": "dddddddd",
+      "price": 2000000,
+      "category": "category2",
+      "quantity": 1
+    },
+    {
+      "id": "8",
+      "name": "jkjhj",
+      "price": 454,
+      "category": "category2",
+      "quantity": 0
+    }
+
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "shams@gmail.com",
+      "firstName": "shams",
+      "lastName": "gamal",
+      "password": "sh123"
+    },
+    {
+      "id": "2",
+      "firstName": "sayed",
+      "lastName": "hashem",
+      "email": "sayed@gmail.com",
+      "password": "sh123"
+    },
+    {
+      "id": "5f0e",
+      "firstName": "shams",
+      "lastName": "Abdeltawab",
+      "email": "shams123@gmail.com",
+      "password": "sham234"
+    },
+    {
+      "id": "c695",
+      "firstName": "shams",
+      "lastName": "Abdeltawab",
+      "email": "shams123@gmail.com",
+      "password": "sham234"
+    },
+    {
+      "id": "d667",
+      "firstName": "shams",
+      "lastName": "Abdeltawab",
+      "email": "shams123@gmail.com",
+      "password": "sham234"
+    },
+    {
+      "id": "3ff9"
+    },
+    {
+      "id": "9d55"
+    },
+    {
+      "id": "1623"
+    },
+    {
+      "id": "24a0"
+    },
+    {
+      "id": "772e"
+    },
+    {
+      "id": "c20c"
+    },
+    {
+      "id": "1b78"
+    },
+    {
+      "id": "4698"
+    },
+    {
+      "id": "9878",
+      "firstName": "hjduij",
+      "lastName": "djkhjkjdsj",
+      "password": "v/@3e/9mFZwTt62",
+      "email": "shams123@gmail.com",
+      "address": [],
+      "phone": [
+        {
+          "phone": "37982382"
+        },
+        {
+          "phone": ""
+        }
+      ]
+    },
+    {
+      "id": "8570",
+      "firstName": "hjduij",
+      "lastName": "djkhjkjdsj",
+      "password": "v/@3e/9mFZwTt62",
+      "email": "shams123@gmail.com",
+      "address": [
+        {
+          "city": "",
+          "street": "",
+          "postal": ""
+        }
+      ],
+      "phone": [
+        {
+          "phone": "37982382"
+        },
+        {
+          "phone": "879863676"
+        }
+      ]
+    },
+    {
+      "id": "4acc",
+      "firstName": "hjduij",
+      "lastName": "djkhjkjdsj",
+      "password": "v/@3e/9mFZwTt62",
+      "email": "shams123@gmail.com",
+      "address": [
+        {
+          "city": "nmb,m",
+          "street": "dh,dgjsa",
+          "postal": "sjdahdjk"
+        }
+      ],
+      "phone": [
+        {
+          "phone": "37982382"
+        },
+        {
+          "phone": "879863676"
+        }
+      ]
+    },
+    {
+      "id": "874c",
+      "firstName": "",
+      "lastName": "",
+      "password": "v/@3e/9mFZwTt62",
+      "email": "shams123@gmail.com",
+      "address": [],
+      "phone": [
+        {
+          "phone": ""
+        }
+      ]
+    },
+    {
+      "id": "010c",
+      "firstName": "",
+      "lastName": "",
+      "password": "v/@3e/9mFZwTt62",
+      "email": "shams123@gmail.com",
+      "address": [],
+      "phone": [
+        {
+          "phone": ""
+        }
+      ]
+    },
+    {
+      "id": "1e16",
+      "firstName": "shams",
+      "lastName": "",
+      "password": "v/@3e/9mFZwTt62",
+      "email": "shams123@gmail.com",
+      "address": [],
+      "phone": [
+        {
+          "phone": ""
+        }
+      ]
+    },
+    {
+      "id": "5af6",
+      "firstName": "",
+      "lastName": "",
+      "password": "v/@3e/9mFZwTt62",
+      "email": "shams123@gmail.com",
+      "address": [],
+      "phone": [
+        {
+          "phone": ""
+        }
+      ]
+    }
+  ]
+}

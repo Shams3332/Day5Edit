@@ -1,0 +1,77 @@
+<p>login works!</p>
+<div class="container">
+    <div class="card mb-4">
+      <div class="card-header">Log In </div>
+      <div class="card-body">
+        <form #signinForm="ngForm" >
+  
+          <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label" for="emailId">Email</label>
+            <div class="col-md-8">
+              <input
+                class="form-control"
+                id="emailId"
+                type="email"
+                placeholder="Email (required)"
+                required
+                email
+                name="email"
+                [(ngModel)]="user.email"
+                #emailNameInput="ngModel"
+                [ngClass]="{'is-invalid':(emailNameInput.touched||emailNameInput.dirty) &&!emailNameInput.valid }"
+              />
+  
+              <span class="invalid-feedback"> 
+                @if(emailNameInput.errors?.['required']){
+                  <span>Email is required</span>
+                }
+                @if(emailNameInput.errors?.['email']){
+                  <span>Email is Not a Valid Email</span>
+                }
+              </span>
+            </div>
+          </div>
+
+        <div class="form-group row mb-2">
+            <label class="col-md-2 col-form-label" for="emailId">Password</label>
+            <div class="col-md-8">
+            <input
+                class="form-control"
+                id="passwordId"
+                type="password"
+                placeholder="password (required)"
+                required
+                name="password"
+                [(ngModel)]="user.password"
+                #passwordInput="ngModel"
+                [ngClass]="{'is-invalid':(passwordInput.touched||passwordInput.dirty) &&!passwordInput.valid }"
+            />
+  
+            <span class="invalid-feedback"> 
+                @if(passwordInput.errors?.['required']){
+                <span>password is required</span>
+                }
+                @if(passwordInput.errors?.['password']){
+                  <span>password is Not a Valid password</span>
+                }
+              </span>
+            </div>
+        </div>
+
+        <button
+            type="submit"
+            class="btn btn-success"
+            [disabled]="!signinForm.valid"
+            routerLink="/home"
+        >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+   
+
+     <p>form valid :{{signinForm.valid}} </p>
+
+  </div>
+  

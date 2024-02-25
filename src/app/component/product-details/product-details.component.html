@@ -1,0 +1,23 @@
+
+<!-- <button class="btn btn-info" [routerLink]="['/products']">Go Back </button> -->
+
+<button class="btn btn-info" (click)="goToProducts()">Go Back</button>
+
+<div class="row mt-5">
+
+<div  class="col-md-4 mb-3">
+  
+    <div class="image-container">
+        <img [src]="singleProduct.imageCover" class="img-fluid" />
+      </div>
+      <h5>Product Title: {{singleProduct.title}}</h5>
+      <p>Slug: {{singleProduct.slug}}</p>
+  
+      <p>Price: {{singleProduct.price}} </p>
+      
+      <p class="text-danger">{{singleProduct.priceAfterDiscount}}</p>
+      <p>Category: {{singleProduct.category}}</p>
+      <button class="btn btn-info" >Add to cart <i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+</div> 
+
